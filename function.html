@@ -1,0 +1,127 @@
+<<!DOCTYPE html>
+
+  <head>
+
+    <title>function</title>
+  </head>
+  <body>
+    <script>
+
+    // declaring a function
+
+    getReminder();
+    function getReminder(){
+    console.log('Water the plants');
+    }
+    greetInSpanish();
+    function greetInSpanish(){
+    console.log('Buenas Tardes.');
+
+    }
+
+    // calling a function
+
+    function sayThanks(){
+    console.log('Thank you for your purchase! We appreciate your business.');
+    }
+    sayThanks();
+    sayThanks();
+    sayThanks();
+
+    // parameters and arguments
+    function sayThanks(name) {
+    console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
+    }
+    console.log('Cole');
+    sayThanks('Cole');
+
+    // default parameters
+    /*we use default parameters to have a predetermined
+    value in case there is no argument passed into the
+     function or if the argument is underfined when
+     called. */
+    function greeting(name = 'stranger'){
+    console.log(`Hello, ${name}!`)
+    }
+    greeting('Ruth');
+    greeting();
+    function makeShoppingList( item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+    console.log(`Remember to buy ${item1}`);
+    console.log(`Remember to buy ${item2}`);
+    console.log(`Remember to buy ${item3}`);
+   }
+    console.log('eggs');
+    console.log('bread');
+    console.log('milk');
+
+    // function return
+    function monitorCount(rows,columns){
+    return rows * columns
+
+
+    }
+    const numOfMonitors = monitorCount(5,4);
+    console.log(numOfMonitors);
+    /*The return keyword is powerful because it allows
+     functions to produce an output. We can then save the
+     output to a variable for
+     later use. */
+
+
+    // helper functions
+     function monitorCount(rows, columns) {
+     return rows * columns;
+     }
+     function costOfMonitors(rows,columns){
+     return monitorCount(rows,columns) * 200;
+
+
+
+    }
+    const totalCost = costOfMonitors(5, 4);
+    console.log(totalCost);
+
+    // functions expression
+    const plantNeedsWater = function(day){
+    if(day === 'Wednesday'){
+      return true;
+
+   } else {
+    return false;
+   }
+ };
+    plantNeedsWater('Tuesday');
+    console.log(plantNeedsWater('Tuesday'));
+
+    // arrow functions
+    //(day) => {
+
+    // consise Body arrow functions
+    /*
+    Zero paramater
+    const functionName = () => {};
+    const functionName = paraOne => {};
+    const functionName = (paraOne, paraTwo) => {}; ( two or more)
+
+
+    */
+    // refractor this code block
+    const plantNeedsWater = day =>
+    day === 'Wednesday' ? true : false;
+    ;
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
