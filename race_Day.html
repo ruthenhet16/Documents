@@ -1,0 +1,38 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+
+  <title>Race Day</title>
+  </head>
+  <body>
+<script>
+let raceNumber = Math.floor(Math.random() * 1000);
+// Math.randdom() returns a value between 0(inclusive) and 1(exclusive).
+//range from 0(inclusive) to 1000(exclusive).
+// Math.floor( round down number)
+const registered_early = true;
+const age = 17;
+if(registered_early && age > 18){
+  raceNumber += 1000;
+}
+if(registered_early && age > 18){
+  console.log(`The race will start at 9:30 am. The race number is: ${raceNumber}`);
+
+}else if(registered_early && age > 18){
+  console.log(`The race will start at 11:00 am. The race number is: ${raceNumber}`);
+}else if(age < 18){
+  console.log(`The race will start at 12:30 pm. The race number is: ${raceNumber}`);
+
+
+}else{
+  console.log('The runners need to see the registration desk.');
+
+}
+
+
+
+
+ </script>
+
+  </body>
+</html>
