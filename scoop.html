@@ -1,0 +1,66 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>scoop</title>
+  </head>
+  <body>
+    <script>
+
+ // blocks and scoop
+
+  const city = 'New York City';
+
+  const logCitySkyline = () => {
+  let skyscraper = 'Empire State Building';
+  return 'The stars over the ' + skyscraper + ' in ' + city;
+  };
+
+  console.log(logCitySkyline());
+
+
+  //Global scoop
+
+ const satellite = 'The Moon';
+ const galaxy = 'The Milky Way';
+ const stars = 'North Star';
+
+const callMyNightSky = () => {
+  return 'Night Sky: ' + satellite +
+  ', ' + stars + ', and ' + galaxy;
+ }
+console.log(callMyNightSky());
+
+ // Block scoop
+ const logVisibleLightWaves = () => {
+
+ const lightWaves = 'Moonlight';
+  console.log(lightWaves);
+
+}
+//console.log(logVisibleLightWaves());
+//console.log(lightWaves);
+// if we run this code, it will give us an error because be tried to call function form outside.
+
+// scoop polution
+// good scooping
+ const logVisibleLightWaves = () => {
+ let lightWaves = 'Moonlight';
+ let region = 'The Arctic';
+  // Add if statement here:
+  if(region === 'The Arctic'){
+    let lightWaves = 'Northern Lights';
+    console.log(lightWaves);
+
+  }
+
+  console.log(lightWaves);
+ };
+
+ logVisibleLightWaves();
+
+
+    </script>
+
+  </body>
+</html>
